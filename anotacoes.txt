@@ -1,0 +1,30 @@
+Bom... como eu tive apenas 5 horas para desenvolver (pois no final de semana que liberaram ocorreu um imprevisto),
+Apenas estruturei o projeto e criei os recursos para consumo referente a entidade Store.
+Irei colocar abaixo as obervações de implementação que faria caso tivesse tempo:
+
+- recurso para pedido onde exisitiram endpoints para:
+	- criar um pedido
+	- add item no pedido
+	- remover item do pedido (caso não tenha sido concluído)
+	- concluir pedido informando os dados de pagamento
+	- reembolsar pedido com a regra citada no readme
+
+Para trabalhar altamente escalável:
+	docker (porém nunca trabalhei com o mesmo, conheço apenas por teoria)
+
+Tempo real:
+	- aplicaria apenas nos itens do pedido e também no pagamento 
+	- trablharia com webflux
+		- faria uma pesquisa mais afunda sobre, pois utilizei apenas em projetos testes
+
+database:
+	- utilizei o liquibase para versionamento, coloquei apenas o jar do postgresql, caso utilizar outro, subir ojar ou add a dependencia
+
+security
+	- aplicaria o jwt
+
+swagger
+	- terminaria o projeto com javadoc e configuraria o swagger
+
+testes
+	- junit para realizar testes unitários
